@@ -1,14 +1,56 @@
 
-body 
-{
+#grid-container { display: grid;}
+
+  #nav {
+        grid-row-start: 1;  
+        grid-row-end: 2;  
+        grid-column-start: 1;  
+        grid-column-end: 3;
+        display:  flex;
+          justify-content: space-evenly;
+      }
+
+ #photo { 
+        grid-row-start: 2;  
+        grid-row-end: 3;  
+        grid-column-start: 1;  
+        grid-column-end: 2;
+        display:  flex;
+          justify-content: space-around;
+      }     
+
+#contact-information { 
+        grid-row-start: 2;  
+        grid-row-end: 3;  
+        grid-column-start: 2;  
+        grid-column-end: 3;
+      }
+
+#professional-experiance { 
+        grid-row-start: 3;  
+        grid-row-end: 4;  
+        grid-column-start: 1;  
+        grid-column-end: 3;
+      }
+
+#skills { 
+        grid-row-start: 4;  
+        grid-row-end: 5;  
+        grid-column-start: 1;  
+        grid-column-end: 3;
+      }
+
+img { max-width: 100%; 
+      margin-top: 20px;
+}
+body {
   font-family: arial;
 }
-
 a:link {
-  color: gray;
+  color: steelblue;
 }
 a:visited {
-  color: steelblue;
+  color: gray;
 }
 a:hover {
   color:  orange;
@@ -19,7 +61,6 @@ ul {
   list-style-type: none;
   font-family: 'Mukta', sans-serif;
 }
-
 ul li::before {
   content: "\2022";
   color: steelblue;
@@ -28,10 +69,8 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-
 h1 {
   background-color: steelblue;
-
   font-size: 40px;
   text-align: center;
   color: white;
@@ -44,8 +83,7 @@ h2 {
   color: white;
   font-family: 'Mukta', sans-serif;
 }
-h3
- {
+h3 {
   text-align: center;
   font-size: 25px;
   background-color: gray;
